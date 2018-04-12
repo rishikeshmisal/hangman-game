@@ -1,0 +1,5 @@
+game\Application.class
+game\service\Hangman.class
+game\entity\Movie.class
+game\controller\Controller.class
+game\schedule\JobScheduler.class
