@@ -23,12 +23,27 @@ public class Movie {
     }
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "dap_audit_id_seq")
-    @SequenceGenerator(name = "dap_audit_id_seq", sequenceName = "public.dap_audit_id_seq", initialValue=1, allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "movie_id_seq")
+    @SequenceGenerator(name = "movie_id_seq", sequenceName = "public.movie_id_seq", initialValue=1, allocationSize = 1)
     @Column(name="ID", nullable=false)
     private Integer id  ;
 
+
+   @Column(name="name")
    public String name;
+
+   @Column(name="year")
    public int year;
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
+    @Column(name="genre")
+    public String genre;
 
 }

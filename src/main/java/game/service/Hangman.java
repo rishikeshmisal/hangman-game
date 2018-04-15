@@ -1,6 +1,7 @@
 package game.service;
 
 import game.entity.Movie;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -142,5 +143,11 @@ public class Hangman {
             }
         }
         return ret;
+    }
+
+    public void saveToDB(MultipartFile file) {
+
+        
+
     }
 }
