@@ -15,14 +15,14 @@ import javax.sql.DataSource;
  * Created by Rishikesh on 4/12/2018.
  */
 @org.springframework.context.annotation.Configuration
-@EnableJpaRepositories(basePackages = "com.ge.digital.dap", transactionManagerRef = "transMgr")
+@EnableJpaRepositories(basePackages = "game", transactionManagerRef = "transMgr")
 public class Configuration {
 
     private static final Logger logger = LoggerFactory.getLogger(Configuration.class);
     private static final String DB_CLASS_NAME = "org.postgresql.Driver";
-    private static String DB_URL = null;
-    private static String DB_USER_NAME = null;
-    private static String DB_PASSWORD = null;
+    private static String DB_URL = "jdbc:postgresql://localhost:5433/postgres";
+    private static String DB_USER_NAME = "postgres";
+    private static String DB_PASSWORD = "admin123";
 
     @Primary
     @Bean

@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 @RestController
 @RequestMapping("/hangman-game")
 public class Controller {
@@ -21,12 +24,17 @@ public class Controller {
     @RequestMapping(
             value="/data-upload",
             method = RequestMethod.POST)
-    public void uploadToDB(@RequestParam(value="file")MultipartFile file){
-        if(file.getSize()==0){
-            System.out.println("File empty!");
-            return;
-        }
-        hangman.saveToDB(file);
+    public void uploadToDB(@RequestParam(value="file-name")String fileName) throws IOException {
+        hangman.saveToDB(fileName);
+
+    }
+
+    @RequestMapping(
+            value="/play-game",
+            method = RequestMethod.POST)
+    public void play() throws IOException {
+        hangman.playGame();
+
     }
 
 }
