@@ -198,7 +198,7 @@ public class Hangman {
         String name;
         int year;
         String genre;
-        for (int i = 9064; i < rows; i++) {
+        for (int i = 1; i < rows; i++) {
             row = sheet.getRow(i);
             if (row != null) {
                     HSSFCell hssfCell = row.getCell(1);
