@@ -1,8 +1,8 @@
-package game.service;
+package timepass.ge.com.game.service;
 
 import com.opencsv.CSVReader;
-import game.entity.Movie;
-import game.repository.IMovieRepo;
+import timepass.ge.com.game.entity.Movie;
+import timepass.ge.com.game.repository.IMovieRepo;
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
@@ -10,13 +10,11 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.poifs.filesystem.POIFSFileSystem;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
-import java.util.StringTokenizer;
 
 @Service
 public class Hangman {
@@ -81,9 +79,13 @@ public class Hangman {
                 input = input.toUpperCase();
                 while (input.length() > 1) {
                     if (input.toUpperCase().equals("HINT")) {
-                        System.out.println("This movie was released in " + m.year + " \t Good Luck!");
+                        System.out.println("This movie was released in " + m.year );
+                        System.out.println("This movie's genre is: "+m.genre+" \t Good Luck!");
                         hint = true;
-                        System.out.println("Enter you attempt");
+                        System.out.println("Enter your attempt");
+                        input = src.nextLine();
+                        break;
+
                     } else {
                         System.out.println("You cannot enter more than one character at a time! Try again.");
                     }

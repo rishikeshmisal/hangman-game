@@ -1,6 +1,6 @@
-package game.repository;
+package timepass.ge.com.game.repository;
 
-import game.entity.Movie;
+import timepass.ge.com.game.entity.Movie;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

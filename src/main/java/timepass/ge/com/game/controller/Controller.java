@@ -1,6 +1,6 @@
-package game.controller;
+package timepass.ge.com.game.controller;
 
-import game.service.Hangman;
+import timepass.ge.com.game.service.Hangman;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,4 @@
-package game.entity;
+package timepass.ge.com.game.entity;
 
 import javax.persistence.*;
 
@@ -23,8 +23,7 @@ public class Movie {
     }
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "movie_id_seq")
-    @SequenceGenerator(name = "movie_id_seq", sequenceName = "public.movie_id_seq", initialValue=1, allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="ID", nullable=false)
     private Integer id  ;
 
