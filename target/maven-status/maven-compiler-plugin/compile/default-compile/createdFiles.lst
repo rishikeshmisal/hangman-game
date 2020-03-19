@@ -1,5 +1,7 @@
-game\Application.class
-game\service\Hangman.class
-game\entity\Movie.class
-game\controller\Controller.class
-game\schedule\JobScheduler.class
+timepass/ge/com/game/controller/Controller.class
+timepass/ge/com/game/repository/IMovieRepo.class
+timepass/ge/com/game/config/Configuration.class
+timepass/ge/com/game/entity/Movie.class
+timepass/ge/com/game/Application.class
+timepass/ge/com/game/schedule/JobScheduler.class
+timepass/ge/com/game/service/Hangman.class

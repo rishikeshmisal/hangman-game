@@ -83,7 +83,7 @@ public class Hangman {
                         System.out.println("This movie's genre is: "+m.genre+" \t Good Luck!");
                         hint = true;
                         System.out.println("Enter your attempt");
-                        input = src.nextLine();
+                        //input = src.nextLine();
                         break;
 
                     } else {

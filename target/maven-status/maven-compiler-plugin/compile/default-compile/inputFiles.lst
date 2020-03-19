@@ -1,5 +1,7 @@
-C:\Users\212578665\Work\DAP\src\github.build.ge.com\Digital-Asset-Passport\hangman\src\main\java\game\controller\Controller.java
-C:\Users\212578665\Work\DAP\src\github.build.ge.com\Digital-Asset-Passport\hangman\src\main\java\game\entity\Movie.java
-C:\Users\212578665\Work\DAP\src\github.build.ge.com\Digital-Asset-Passport\hangman\src\main\java\game\Application.java
-C:\Users\212578665\Work\DAP\src\github.build.ge.com\Digital-Asset-Passport\hangman\src\main\java\game\service\Hangman.java
-C:\Users\212578665\Work\DAP\src\github.build.ge.com\Digital-Asset-Passport\hangman\src\main\java\game\schedule\JobScheduler.java
+/Users/rishikeshmisal/Work/hangman-game/src/main/java/timepass/ge/com/game/config/Configuration.java
+/Users/rishikeshmisal/Work/hangman-game/src/main/java/timepass/ge/com/game/repository/IMovieRepo.java
+/Users/rishikeshmisal/Work/hangman-game/src/main/java/timepass/ge/com/game/schedule/JobScheduler.java
+/Users/rishikeshmisal/Work/hangman-game/src/main/java/timepass/ge/com/game/service/Hangman.java
+/Users/rishikeshmisal/Work/hangman-game/src/main/java/timepass/ge/com/game/Application.java
+/Users/rishikeshmisal/Work/hangman-game/src/main/java/timepass/ge/com/game/entity/Movie.java
+/Users/rishikeshmisal/Work/hangman-game/src/main/java/timepass/ge/com/game/controller/Controller.java
